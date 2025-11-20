@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vídeo de Fundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="tela-preta"></div>
+
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="video-fundo">
+        <source src="video/video logo outsize.mp4" type="video/mp4">
+    </video>
+
+    <!-- Camada escura -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h1 class="title-principal">BEM VINDO A OUTSIZE</h1>
+        <p class="subtitle">Vista a obra e construa o físico.</p>
+        <a class="btn-gotico" id="botao-entrar" href="#">Entrar</a>
+    </div>
+
+    <!-- Script 1: apenas velocidade do vídeo -->
+    <script>
+        const video = document.getElementById('video-fundo');
+        video.playbackRate = 0.5;
+    </script>
+
+    <!-- Script 2: efeito + redirecionamento -->
+    <script>
+        const entrar = document.getElementById('botao-entrar');
+        const conteudo = document.querySelector('.conteudo');
+        const overlay = document.querySelector('.overlay');
+        const telaPreta = document.getElementById('tela-preta');
+
+        entrar.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // fade-out do conteúdo
+            conteudo.classList.add('fadeOut');
+            overlay.classList.add('fadeOut');
+            video.classList.add('fadeOut');
+
+            // tela preta sobe
+            setTimeout(() => {
+                telaPreta.style.bottom = "0";
+            }, 300);
+
+            // redireciona
+            setTimeout(() => {
+                window.location.href = "vendas.html";
+            }, 1300);
+        });
+    </script>
+
+</body>
+</html>

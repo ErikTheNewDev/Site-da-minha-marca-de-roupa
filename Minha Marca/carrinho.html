@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho – OUTSIZE</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="topo">
+        <div class="logo">OUTSIZE</div>
+        <nav>
+            <ul>
+                <li><a href="Vendas.html">Início</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="carrinho.html" class="ativo">Carrinho</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="container">
+    <h2>Carrinho de Compras</h2>
+
+    <div id="carrinho-itens" class="carrinho-itens">
+        <!-- Itens são inseridos via JavaScript -->
+    </div>
+
+    <div class="resumo">
+        <p>Total: <span id="total">R$ 0,00</span></p>
+        <a href="checkout.html" class="btn-finalizar">Finalizar Compra</a>
+    </div>
+</section>
+
+<script src="js/carrinho.js"></script>
+
+</body>
+</html>

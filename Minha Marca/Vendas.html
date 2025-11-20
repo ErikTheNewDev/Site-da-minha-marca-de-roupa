@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>OUTSIZE - Loja Oficial</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="vendas.css">
+
+    <!-- Fonte usada no logo -->
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+    <!-- IMPORTANTE:
+         Evita espaçamentos e bugs visuais no carrossel em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- HEADER -> permanece igual -->
+<header class="header">
+    <div class="topo">
+        <div class="logo">OUTSIZE</div>
+
+        <nav>
+            <ul>
+                <li><a class="menu-item" href="vendas.css">Início</a></li>
+                <li><a class="menu-item" href="about.html">Sobre nós</a></li>
+                <li><a class="menu-item" href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h2 class="titulo-hero">Vista a obra, Construa o físico.</h2>
+</section>
+
+
+<!-- ======================
+     CARROSSEL DE PRODUTOS
+     ====================== -->
+<section class="carrossel-produtos">
+
+    <!-- Setas do carrossel -->
+    <!-- São botões normais -->
+    <button class="seta seta-esq">&#10094;</button>
+
+    <!-- O container que desliza -->
+    <!-- PRECISA TER A CLASSE .carrossel PARA O JS ENCONTRAR -->
+    <div class="carrossel">
+
+        <!-- Cada item do carrossel -->
+        <!-- O JS usa .item para aplicar o zoom e detectar o centro -->
+        <div class="item">
+            <img src="img/wpp 1.jpeg" alt="">
+            <h3>Camiseta Outsize – Overfoda</h3>
+            <p class="preco">R$ 120,90</p>
+            <a class="btn-comprar" onclick="adicionarCarrinho('Camiseta Outsize – Overfoda', 120.90, 'img/wpp 1.jpeg')">Adicionar ao carrinho</a>
+
+        </div>
+
+        <div class="item">
+            <img src="img/wwp2.jpeg" alt="">
+            <h3>Camiseta Outsize – Compressão 1</h3>
+            <p class="preco">R$ 89,90</p>
+            <a class="btn-comprar" onclick="adicionarCarrinho('Camiseta Outsize – Compressão 1', 89.90, 'img/wwp2.jpeg')">Adicionar ao carrinho</a>
+        </div>
+
+        <div class="item">
+            <img src="img/wwp3.jpeg" alt="">
+            <h3>Camiseta Outsize – Compressão 2</h3>
+            <p class="preco">R$ 89,90</p>
+            <a class="btn-comprar" onclick="adicionarCarrinho('Camiseta Outsize – Compressão 2', 89.90, 'img/wwp3.jpeg')">Adicionar ao carrinho</a>
+        </div>
+
+    </div>
+
+    <button class="seta seta-dir">&#10095;</button>
+</section>
+
+
+<!-- ======================
+     SCRIPTS
+     ====================== -->
+
+<!-- Header ocultável -->
+<script src="js/header.js"></script>
+<script src="js/header.js"></script> <!-- seu header JS -->
+<script src="js/carousel-auto.js"></script> <!-- ESTE script -->
+
+
+
+</body>
+</html>
