@@ -3,5 +3,5 @@ Esse é o codigo base com um pouco do CSS e do JS aplicados no meu site, não po
 mas segue o projeto final
 
 <div align="center">
-  <img src="OUTSIZE">
+  <img src="OUTSIZE.jpeg">
 </div>
